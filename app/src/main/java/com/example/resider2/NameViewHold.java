@@ -12,7 +12,7 @@ public class NameViewHold extends RecyclerView.ViewHolder {
     public NameViewHold(@NonNull View itemView) {
         super(itemView);
 
-        contacts = itemView.findViewById(R.id.res);
+        contacts = itemView.findViewById(R.id.hom);
     }
 
     public void bind(String nameValue) {

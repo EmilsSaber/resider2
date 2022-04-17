@@ -15,14 +15,31 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        loadData();
         recyclerView = findViewById(R.id.res);
+
+        Name adapter = new Name(contacts);
+        recyclerView.setAdapter(adapter);
+
+    }
+
+    private void loadData() {
         contacts = new ArrayList<>();
         contacts.add("Emil");
         contacts.add("Emil");
         contacts.add("Emil");
         contacts.add("Emil");
-        Name adapter = new Name(contacts);
-        recyclerView.setAdapter(adapter);
+        contacts.add("Emil");
+        contacts.add("Emil");
+        contacts.add("Emil");
+        contacts.add("Emil");
+        contacts.add("Emil");
+        contacts.add("Emil");
+        contacts.add("Emil");
+        contacts.add("Emil");
+        contacts.add("Emil");
+        contacts.add("Emil");
+        contacts.add("Emil");
 
     }
 }
